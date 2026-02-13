@@ -1,6 +1,6 @@
 # Heliostat Sun Tracker
 
-![Project Preview](media/Generated.jpg)
+![Project Preview](media/Generated.jpeg)
 
 A WiFi-controlled 2-axis mirror alignment system designed to automatically point a mirror at the sun. This prototype demonstrates the mechanics and control systems for a heliostatic mirror reflector.
 
