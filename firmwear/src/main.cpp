@@ -11,11 +11,15 @@ const char* ssid = "wifi";
 const char* password = "pass";
 
 /* ========= STEPPER PINS ========= */
-#define STEP_X 13
-#define DIR_X  12
-#define STEP_Y 18
-#define DIR_Y  17
-#define SLEEP_RESET_STEP_PIN  6
+#define STEP_X 7
+#define DIR_X  9
+#define STEP_Y 20
+#define DIR_Y  21
+#define SLEEP_RESET_STEP_PIN_X  8
+#define SLEEP_RESET_STEP_PIN_Y  10
+
+/* ========= LED PIN ========= */
+#define LED_PIN 8
 
 /* ========= GEAR CALIBRATION (microsteps per degree) ========= */
 // Defaults: Azimuth 17:144, Elevation 21:64. Adjust via Preferences for backlash.
@@ -509,8 +513,10 @@ void setup() {
   pinMode(DIR_X, OUTPUT);
   pinMode(STEP_Y, OUTPUT);
   pinMode(DIR_Y, OUTPUT);
-  pinMode(SLEEP_RESET_STEP_PIN, OUTPUT);
-  digitalWrite(SLEEP_RESET_STEP_PIN, HIGH);
+  pinMode(SLEEP_RESET_STEP_PIN_X, OUTPUT);
+  digitalWrite(SLEEP_RESET_STEP_PIN_X, HIGH);
+  pinMode(SLEEP_RESET_STEP_PIN_Y, OUTPUT);
+  digitalWrite(SLEEP_RESET_STEP_PIN_Y, HIGH);
 
   Serial.begin(115200);
   delay(2000);

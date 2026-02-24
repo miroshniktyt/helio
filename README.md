@@ -14,7 +14,7 @@ The heliostat can be manually aligned north, then automatically track the sun's 
 
 | Component | Purpose |
 |-----------|---------|
-| **ESP32-S3** | Brain/Controller |
+| **ESP32 Super Mini C3** | Brain/Controller |
 | **NEMA17 Steppers** (×2) | Motion |
 | **A4988 Drivers** (×2) | Stepper Control |
 | **30×21 cm Mirror** | Reflection |
